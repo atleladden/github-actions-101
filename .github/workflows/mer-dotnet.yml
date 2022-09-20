@@ -1,4 +1,4 @@
-name: "Mer Hello .NET!"
+name: "Mer Hello .NET!222"
 
 on:
   workflow_dispatch:
@@ -19,3 +19,9 @@ jobs:
 
       - name: "Restore Tests"
         run: dotnet restore $Notes_Api_Test
+
+      - name: "Build Tests"
+        run: dotnet build $Notes_Api_Test
+
+      - name: "Run Tests"
+        run: dotnet test $Notes_Api_Test
